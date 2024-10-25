@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог Домов</title>
+    <link rel="stylesheet" href="./assets/css/style.css"> <!-- Укажите путь к вашему CSS файлу -->
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script> <!-- Подключение иконок Ionicons -->
+    <style>
+        /* Добавляем базовые стили для отображения в 3 ряда */
+        .property-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+            gap: 20px; /* Отступы между карточками */
+        }
+
+        .property-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff; /* Белый фон для карточки */
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="property" id="property">
+        <div class="container">
+            <h2 class="h2 section-title">Карточки Домов</h2>
+
+            <ul class="property-list">
+
+                <!-- Первая карточка -->
+                <li>
+                    <div class="property-card">
+                        <figure class="card-banner">
+                            <a href="#">
+                                <img src="./assets/images/property-1.jpg" alt="Квартира с хорошим видом" class="w-100">
+                            </a>
+                            <div class="card-badge green">Сдается в аренду</div>
+                            <div class="banner-actions">
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="location"></ion-icon>
+                                    <address>Белмонт Гарденс, Чикаго</address>
+                                </button>
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="camera"></ion-icon>
+                                    <span>4</span>
+                                </button>
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="film"></ion-icon>
+                                    <span>2</span>
+                                </button>
+                            </div>
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-price">
+                                <strong>$34,900</strong>/Month
+                            </div>
+                            <h3 class="h3 card-title">
+                                <a href="#">Новая квартира С прекрасным видом</a>
+                            </h3>
+                            <p class="card-text">
+                                Красивый Огромный Дом На 1 Семью В Самом Сердце Уэстбери. Недавно Отремонтированный С Использованием Нового Дерева
+                            </p>
+                            <ul class="card-list">
+                                <li class="card-item"><strong>3</strong><ion-icon name="bed-outline"></ion-icon><span>Спальни</span></li>
+                                <li class="card-item"><strong>2</strong><ion-icon name="man-outline"></ion-icon><span>Ванные комнаты</span></li>
+                                <li class="card-item"><strong>3450</strong><ion-icon name="square-outline"></ion-icon><span>Квадратный Фут</span></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <figure class="author-avatar">
+                                    <img src="./assets/images/Dzhamil.png" alt="Данилбек уулу Жамил" class="w-100">
+                                </figure>
+                                <div>
+                                    <p class="author-name"><a href="#">Данилбек уулу Жамил</a></p>
+                                    <p class="author-title">Агенты по недвижимости</p>
+                                </div>
+                            </div>
+                            <div class="card-footer-actions">
+                                <button class="card-footer-actions-btn"><ion-icon name="resize-outline"></ion-icon></button>
+                                <button class="card-footer-actions-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                <button class="card-footer-actions-btn"><ion-icon name="add-circle-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Вторая карточка -->
+                <li>
+                    <div class="property-card">
+                        <figure class="card-banner">
+                            <a href="#">
+                                <img src="./assets/images/property-2.jpg" alt="Modern Apartments" class="w-100">
+                            </a>
+                            <div class="card-badge orange">Для продажи</div>
+                            <div class="banner-actions">
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="location"></ion-icon>
+                                    <address>Белмонт Гарденс, Чикаго</address>
+                                </button>
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="camera"></ion-icon>
+                                    <span>4</span>
+                                </button>
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="film"></ion-icon>
+                                    <span>2</span>
+                                </button>
+                            </div>
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-price">
+                                <strong>$34,900</strong>/Month
+                            </div>
+                            <h3 class="h3 card-title">
+                                <a href="#">Современные апартаменты</a>
+                            </h3>
+                            <p class="card-text">
+                                Красивый Огромный Дом На 1 Семью В Самом Сердце Уэстбери. Недавно Отремонтированный С Использованием Нового Дерева
+                            </p>
+                            <ul class="card-list">
+                                <li class="card-item"><strong>3</strong><ion-icon name="bed-outline"></ion-icon><span>Спальни</span></li>
+                                <li class="card-item"><strong>2</strong><ion-icon name="man-outline"></ion-icon><span>Ванные комнаты</span></li>
+                                <li class="card-item"><strong>3450</strong><ion-icon name="square-outline"></ion-icon><span>Квадратный Фут</span></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <figure class="author-avatar">
+                                    <img src="./assets/images/Bars.png" alt="Койлубаев Барсбек" class="w-100">
+                                </figure>
+                                <div>
+                                    <p class="author-name"><a href="#">Койлубаев Барсбек</a></p>
+                                    <p class="author-title">Агенты по недвижимости</p>
+                                </div>
+                            </div>
+                            <div class="card-footer-actions">
+                                <button class="card-footer-actions-btn"><ion-icon name="resize-outline"></ion-icon></button>
+                                <button class="card-footer-actions-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                <button class="card-footer-actions-btn"><ion-icon name="add-circle-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Третья карточка -->
+                <li>
+                    <div class="property-card">
+                        <figure class="card-banner">
+                            <a href="#">
+                                <img src="./assets/images/property-3.jpg" alt="Comfortable Apartment" class="w-100">
+                            </a>
+                            <div class="card-badge green">Сдается в аренду</div>
+                            <div class="banner-actions">
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="location"></ion-icon>
+                                    <address>Белмонт Гарденс, Чикаго</address>
+                                </button>
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="camera"></ion-icon>
+                                    <span>4</span>
+                                </button>
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="film"></ion-icon>
+                                    <span>2</span>
+                                </button>
+                            </div>
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-price">
+                                <strong>$34,900</strong>/Month
+                            </div>
+                            <h3 class="h3 card-title">
+                                <a href="#">Комфортабельная квартира</a>
+                            </h3>
+                            <p class="card-text">
+                                Красивый Огромный Дом На 1 Семью В Самом Сердце Уэстбери. Недавно Отремонтированный С Использованием Нового Дерева
+                            </p>
+                            <ul class="card-list">
+                                <li class="card-item"><strong>3</strong><ion-icon name="bed-outline"></ion-icon><span>Спальни</span></li>
+                                <li class="card-item"><strong>2</strong><ion-icon name="man-outline"></ion-icon><span>Ванные комнаты</span></li>
+                                <li class="card-item"><strong>3450</strong><ion-icon name="square-outline"></ion-icon><span>Квадратный Фут</span></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <figure class="author-avatar">
+                                    <img src="./assets/images/Bael.png" alt="Орунбаев Баел" class="w-100">
+                                </figure>
+                                <div>
+                                    <p class="author-name"><a href="#">Орунбаев Баел</a></p>
+                                    <p class="author-title">Агенты по недвижимости</p>
+                                </div>
+                            </div>
+                            <div class="card-footer-actions">
+                                <button class="card-footer-actions-btn"><ion-icon name="resize-outline"></ion-icon></button>
+                                <button class="card-footer-actions-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                <button class="card-footer-actions-btn"><ion-icon name="add-circle-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Четвертая карточка -->
+                <li>
+                    <div class="property-card">
+                        <figure class="card-banner">
+                            <a href="#">
+                                <img src="./assets/images/blog-3.jpg" alt="Luxury Villa" class="w-100">
+                            </a>
+                            <div class="card-badge orange">Для продажи</div>
+                            <div class="banner-actions">
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="location"></ion-icon>
+                                    <address>Белмонт Гарденс, Чикаго</address>
+                                </button>
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="camera"></ion-icon>
+                                    <span>4</span>
+                                </button>
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="film"></ion-icon>
+                                    <span>2</span>
+                                </button>
+                            </div>
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-price">
+                                <strong>$34,900</strong>/Month
+                            </div>
+                            <h3 class="h3 card-title">
+                                <a href="#">Роскошная вилла</a>
+                            </h3>
+                            <p class="card-text">
+                                Красивый Огромный Дом На 1 Семью В Самом Сердце Уэстбери. Недавно Отремонтированный С Использованием Нового Дерева
+                            </p>
+                            <ul class="card-list">
+                                <li class="card-item"><strong>3</strong><ion-icon name="bed-outline"></ion-icon><span>Спальни</span></li>
+                                <li class="card-item"><strong>2</strong><ion-icon name="man-outline"></ion-icon><span>Ванные комнаты</span></li>
+                                <li class="card-item"><strong>3450</strong><ion-icon name="square-outline"></ion-icon><span>Квадратный Фут</span></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <figure class="author-avatar">
+                                    <img src="./assets/images/Daulet.png" alt="Турдумбеков Даулет" class="w-100">
+                                </figure>
+                                <div>
+                                    <p class="author-name"><a href="#">Турдумбеков Даулет</a></p>
+                                    <p class="author-title">Агенты по недвижимости</p>
+                                </div>
+                            </div>
+                            <div class="card-footer-actions">
+                                <button class="card-footer-actions-btn"><ion-icon name="resize-outline"></ion-icon></button>
+                                <button class="card-footer-actions-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                <button class="card-footer-actions-btn"><ion-icon name="add-circle-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Пятая карточка -->
+                <li>
+                    <div class="property-card">
+                        <figure class="card-banner">
+                            <a href="#">
+                                <img src="./assets/images/blog-1.png" alt="Cozy Cottage" class="w-100">
+                            </a>
+                            <div class="card-badge green">Сдается в аренду</div>
+                            <div class="banner-actions">
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="location"></ion-icon>
+                                    <address>Белмонт Гарденс, Чикаго</address>
+                                </button>
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="camera"></ion-icon>
+                                    <span>4</span>
+                                </button>
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="film"></ion-icon>
+                                    <span>2</span>
+                                </button>
+                            </div>
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-price">
+                                <strong>$34,900</strong>/Month
+                            </div>
+                            <h3 class="h3 card-title">
+                                <a href="#">Уютный коттедж</a>
+                            </h3>
+                            <p class="card-text">
+                                Красивый Огромный Дом На 1 Семью В Самом Сердце Уэстбери. Недавно Отремонтированный С Использованием Нового Дерева
+                            </p>
+                            <ul class="card-list">
+                                <li class="card-item"><strong>3</strong><ion-icon name="bed-outline"></ion-icon><span>Спальни</span></li>
+                                <li class="card-item"><strong>2</strong><ion-icon name="man-outline"></ion-icon><span>Ванные комнаты</span></li>
+                                <li class="card-item"><strong>3450</strong><ion-icon name="square-outline"></ion-icon><span>Квадратный Фут</span></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <figure class="author-avatar">
+                                    <img src="./assets/images/Dzhamil.png" alt="Данилбек уулу Жамил" class="w-100">
+                                </figure>
+                                <div>
+                                    <p class="author-name"><a href="#">Данилбек уулу Жамил</a></p>
+                                    <p class="author-title">Агенты по недвижимости</p>
+                                </div>
+                            </div>
+                            <div class="card-footer-actions">
+                                <button class="card-footer-actions-btn"><ion-icon name="resize-outline"></ion-icon></button>
+                                <button class="card-footer-actions-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                <button class="card-footer-actions-btn"><ion-icon name="add-circle-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Шестая карточка -->
+                <li>
+                    <div class="property-card">
+                        <figure class="card-banner">
+                            <a href="#">
+                                <img src="./assets/images/blog-2.jpg" alt="Spacious Villa" class="w-100">
+                            </a>
+                            <div class="card-badge orange">Для продажи</div>
+                            <div class="banner-actions">
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="location"></ion-icon>
+                                    <address>Белмонт Гарденс, Чикаго</address>
+                                </button>
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="camera"></ion-icon>
+                                    <span>4</span>
+                                </button>
+                                <button class="banner-actions-btn">
+                                    <ion-icon name="film"></ion-icon>
+                                    <span>2</span>
+                                </button>
+                            </div>
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-price">
+                                <strong>$34,900</strong>/Month
+                            </div>
+                            <h3 class="h3 card-title">
+                                <a href="#">Просторная вилла</a>
+                            </h3>
+                            <p class="card-text">
+                                Красивый Огромный Дом На 1 Семью В Самом Сердце Уэстбери. Недавно Отремонтированный С Использованием Нового Дерева
+                            </p>
+                            <ul class="card-list">
+                                <li class="card-item"><strong>3</strong><ion-icon name="bed-outline"></ion-icon><span>Спальни</span></li>
+                                <li class="card-item"><strong>2</strong><ion-icon name="man-outline"></ion-icon><span>Ванные комнаты</span></li>
+                                <li class="card-item"><strong>3450</strong><ion-icon name="square-outline"></ion-icon><span>Квадратный Фут</span></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <figure class="author-avatar">
+                                    <img src="./assets/images/Bael.png" alt="Орунбаев Баел" class="w-100">
+                                </figure>
+                                <div>
+                                    <p class="author-name"><a href="#">Орунбаев Баел</a></p>
+                                    <p class="author-title">Агенты по недвижимости</p>
+                                </div>
+                            </div>
+                            <div class="card-footer-actions">
+                                <button class="card-footer-actions-btn"><ion-icon name="resize-outline"></ion-icon></button>
+                                <button class="card-footer-actions-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                <button class="card-footer-actions-btn"><ion-icon name="add-circle-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <ul class="property-list">
+       
+    </section>  
